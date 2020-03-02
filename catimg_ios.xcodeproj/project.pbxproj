@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		DEA2B98723D6B9D400E918B8 /* catimg_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA2B98523D6B9D400E918B8 /* catimg_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEA2B98F23D6BA2C00E918B8 /* ios_system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA2B98E23D6BA2C00E918B8 /* ios_system.framework */; };
+		DEA2B99C23D6BA9700E918B8 /* sh_color.c in Sources */ = {isa = PBXBuildFile; fileRef = DEA2B99323D6BA9700E918B8 /* sh_color.c */; };
+		DEA2B99E23D6BA9700E918B8 /* sh_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = DEA2B99523D6BA9700E918B8 /* sh_utils.c */; };
+		DEA2B99F23D6BA9700E918B8 /* catimg.c in Sources */ = {isa = PBXBuildFile; fileRef = DEA2B99623D6BA9700E918B8 /* catimg.c */; };
+		DEA2B9A023D6BA9700E918B8 /* stb_image.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA2B99723D6BA9700E918B8 /* stb_image.h */; };
+		DEA2B9A223D6BA9700E918B8 /* sh_image.c in Sources */ = {isa = PBXBuildFile; fileRef = DEA2B99923D6BA9700E918B8 /* sh_image.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DEA2B98223D6B9D300E918B8 /* catimg_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = catimg_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA2B98523D6B9D400E918B8 /* catimg_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = catimg_ios.h; sourceTree = "<group>"; };
 		DEA2B98623D6B9D400E918B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA2B98E23D6BA2C00E918B8 /* ios_system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ios_system.framework; path = ../../frameworks/ios_system.framework; sourceTree = "<group>"; };
+		DEA2B99323D6BA9700E918B8 /* sh_color.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sh_color.c; sourceTree = "<group>"; };
+		DEA2B99423D6BA9700E918B8 /* sh_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sh_image.h; sourceTree = "<group>"; };
+		DEA2B99523D6BA9700E918B8 /* sh_utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sh_utils.c; sourceTree = "<group>"; };
+		DEA2B99623D6BA9700E918B8 /* catimg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = catimg.c; sourceTree = "<group>"; };
+		DEA2B99723D6BA9700E918B8 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		DEA2B99823D6BA9700E918B8 /* khash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = khash.h; sourceTree = "<group>"; };
+		DEA2B99923D6BA9700E918B8 /* sh_image.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sh_image.c; sourceTree = "<group>"; };
+		DEA2B99A23D6BA9700E918B8 /* sh_color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sh_color.h; sourceTree = "<group>"; };
+		DEA2B99B23D6BA9700E918B8 /* sh_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sh_utils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA2B98F23D6BA2C00E918B8 /* ios_system.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,8 +47,10 @@
 		DEA2B97823D6B9D300E918B8 = {
 			isa = PBXGroup;
 			children = (
+				DEA2B99223D6BA9700E918B8 /* src */,
 				DEA2B98423D6B9D300E918B8 /* catimg_ios */,
 				DEA2B98323D6B9D300E918B8 /* Products */,
+				DEA2B98D23D6BA2B00E918B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +71,30 @@
 			path = catimg_ios;
 			sourceTree = "<group>";
 		};
+		DEA2B98D23D6BA2B00E918B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEA2B98E23D6BA2C00E918B8 /* ios_system.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEA2B99223D6BA9700E918B8 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				DEA2B99323D6BA9700E918B8 /* sh_color.c */,
+				DEA2B99423D6BA9700E918B8 /* sh_image.h */,
+				DEA2B99523D6BA9700E918B8 /* sh_utils.c */,
+				DEA2B99623D6BA9700E918B8 /* catimg.c */,
+				DEA2B99723D6BA9700E918B8 /* stb_image.h */,
+				DEA2B99823D6BA9700E918B8 /* khash.h */,
+				DEA2B99923D6BA9700E918B8 /* sh_image.c */,
+				DEA2B99A23D6BA9700E918B8 /* sh_color.h */,
+				DEA2B99B23D6BA9700E918B8 /* sh_utils.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -60,6 +103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA2B98723D6B9D400E918B8 /* catimg_ios.h in Headers */,
+				DEA2B9A023D6BA9700E918B8 /* stb_image.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA2B9A223D6BA9700E918B8 /* sh_image.c in Sources */,
+				DEA2B99E23D6BA9700E918B8 /* sh_utils.c in Sources */,
+				DEA2B99C23D6BA9700E918B8 /* sh_color.c in Sources */,
+				DEA2B99F23D6BA9700E918B8 /* catimg.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,13 +310,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = catimg_ios/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_CFLAGS = "-DFEAT_IOS";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.terrychou.catimg-ios";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -285,13 +339,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = catimg_ios/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_CFLAGS = "-DFEAT_IOS";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.terrychou.catimg-ios";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
